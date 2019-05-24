@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='styles/styles.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>La Bouquiniste Américaine</title>
+</head>
+
+<body>
+    <div class = "langselect">
+        <a href = '/en' style = 'color: #64222d'>en</a>
+                
+        <a href = '/fr' style = 'color: #64222d'>fr</a>
+    </div>
+    <div class="header">
+        La Bouquiniste Américaine
+    </div>
+    <ul>
+        <li> <a class='active' href ='/'>Home</a></li>
+        <li> <a href ='/en/about'>About</a></li>
+        <li> <a href ='/en/by_book'>Recommendations by book</a></li>
+        <li> <a href ='/en/by_topic'>Recommendations by topic</a></li>
+        <li> <a href ='/en/contact'>Contact</a></li>
+    </ul>
+    <div class = 'content'>
+        <h3>
+            What book should you read next?
+        </h3>
+    
+        <p>
+            Please select from the dropdown menu what topic you are most interested in!
+            <br />(Be warned though, the topics are VERY general!)
+        </p>
+        <form action='/en/by_topic'>
+            <select name='Topics'>
+                {% for f in topics.keys()%} 
+                    <option value = {{ f }}> {{ topics[f] }} </option> 
+                {% endfor %}
+            </select> 
+            <input class='btn' type="submit" value="Submit" method="get">
+        </form>
+    
+        <p>
+           Recommended books : <br /><br />
+           {% for f in chosen_topic %} 
+                {{ f }} <br />
+           {% endfor %}
+        </p>
+        <p>
+            <br /><br />
+            P.S. - Be careful! These are books that are high in that topic percentage-wise, but that doesn't 
+            necessarily mean that they have a lot of the topic! Be sure to read a summary before making a decision.
+        </p>
+    </div>
+    <div class="footer">
+        <p>
+            <a href='/' style = 'color: #FFFFFF'>Homepage </a> |
+            <a href='/en/about' style = 'color: #FFFFFF'>About</a> |
+            <a href='/en/contact' style = 'color: #FFFFFF'>Contact</a> |
+            <a href='https://marenhamilton.com' style = 'color: #FFFFFF'>Blog</a>
+        </p>
+    </div>
+</body>
+
+</html>

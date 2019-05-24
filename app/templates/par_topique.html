@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class = "langselect">
+    <a href = '/en' style = 'color: #64222d'>en</a>
+            
+    <a href = '/fr' style = 'color: #64222d'>fr</a>
+</div>
+
+<head>
+    <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='styles/styles.css') }}">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>La Bouquiniste Américaine</title>
+</head>
+
+<body>
+    <div class="header">
+        La Bouquiniste Américaine
+    </div>
+    <ul>
+        <li> <a class='active' href ='/fr'>Accueil</a></li>
+        <li> <a href ='/fr/a_propos'>A propos</a></li>
+        <li> <a href ='/fr/par_livre'>Recommendations par livre </a></li>
+        <li> <a href ='/fr/par_topique'>Recommendations par topique</a></li>
+        <li> <a href ='/fr/contact'>Contact</a></li>
+    </ul>
+    <div class = 'content'>
+        <h3>
+            Quel est le prochain livre que vous devriez lire?
+        </h3>
+    
+        <p>
+            S'il vous plaît, selectionnez un livre que vous avex aimé au passé dans le menu déroulant.
+            <br />(Mais méfie-toi, les topiques sont TRÈS généerales!)
+        </p>
+        <form action='/fr/par_topique'>
+            <select name='Topics'>
+                {% for f in topics.keys()%} 
+                    <option value = {{ f }}> {{ topics[f] }} </option> 
+                {% endfor %}
+            </select> 
+            <input class='btn' type="submit" value="Soumettre" method="get">
+        </form>
+    
+        <p>
+            Livres suggérés : <br /><br />
+           {% for f in chosen_topic %} 
+                {{ f }} <br />
+           {% endfor %}
+        </p>
+        <p>
+            <br /><br />
+            P.S. - Faites attention! Ce sont des livres qui correspondent le plus à cette topique
+            parce qu'ils ont un haut pourcentage du text qui correspond à la topique - mais ce ne veut pas
+            dire forcément qu'ils parlent beaucoup de'elle! Avant de décider, il vaut mieux que vous lisiez un sommaire du livre.
+            Be careful! These are books that are high in that topic percentage-wise, but that doesn't 
+            necessarily mean that they have a lot of the topic! Be sure to read a summary before making a decision.
+        </p>
+    </div>
+    <div class="footer">
+        <p>
+            <a href='/fr' style = 'color: #FFFFFF'>Accueil </a> |
+            <a href='/fr/a_propos' style = 'color: #FFFFFF'>A propos</a> |
+            <a href='/fr/contact' style = 'color: #FFFFFF'>Contact</a> |
+            <a href='https://marenhamilton.com' style = 'color: #FFFFFF'>Blog</a>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='styles/styles.css') }}">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <title>La Bouquiniste Américaine</title>
+    </head>
+    <body>
+        <div class = "langselect">
+            <a href = '/en' style = 'color: #64222d'>en</a>
+                    
+            <a href = '/fr' style = 'color: #64222d'>fr</a>
+        </div>
+        <div class="header">
+            La Bouquiniste Américaine
+        </div>
+        <ul>
+            <li> <a class='active' href ='/'>Home</a></li>
+            <li> <a href ='/en/about'>About</a></li>
+            <li> <a href ='/en/by_book'>Recommendations by book</a></li>
+            <li> <a href ='/en/by_topic'>Recommendations by topic</a></li>
+            <li> <a href ='/en/contact'>Contact</a></li>
+        </ul>
+        <div class="content">
+            <h1>About La Bouquiniste Américaine</h1>
+
+            <p> 
+                If your're looking for how I made this app and its models, you can read about it on my blog
+                <a href='https://www.marenhamilton.com'> here</a>.
+            </p>
+            <h3>What is it?</h3>
+            <p>
+                La Bouquiniste Américaine is a book recommendation system that I made for those who love to read and know what they like.
+                All the books listed on this website, either in French or in English, should be available for free through <a href = 'https://www.gutenberg.org/'> Project Gutenberg</a>
+                for English texts or <a href = 'http://www.bibebook.com/'> Bibebook</a> for French texts.
+            </p>
+            <h3> Raison d'Etre</h3>
+            <p>
+                I made this app because I love languages, and hope that people can use this tool to improve their
+                second language skills. If people use it to find books in their first language as well, that's just another
+                benefit. I would love to add more languages for people to use, so if you're familiar
+                with any websites of free books in another language, please let me know! You can find out how to reach
+                me on my <a href = '/en/contact'>contact</a> page. You can also contact me about any errors you find.
+            </p>
+            <h3>Acknowledgements</h3>
+            <p> 
+                I would like to thank Project Gutenberg and Bibebook for making these books available,
+                with extra thanks to Gutenberg for providing a database of their books. I would also like to thank 
+                <a href = 'https://www.kaggle.com/cedriclacrambe'> Cédric Lacrambe </a> for compiling the Bibebook
+                dataset I used. <br /><br />
+                Most of all, of course, I would like to thank my French teachers: Mme Nevers, Mme Schiele, Mme Richards,
+                and "Papa" (dont le vrai nom m'échappe, désolée Papa). They fueled my love of language. Without them, I would
+                never have known how much I love languages.
+                <br><br>
+            </p>
+        </div>
+        <div class="footer">
+            <p>
+                <a href='/' style = 'color: #FFFFFF'>Homepage </a> |
+                <a href='/en/about' style = 'color: #FFFFFF'>About</a> |
+                <a href='/en/contact' style = 'color: #FFFFFF'>Contact</a> |
+                <a href='https://marenhamilton.com' style = 'color: #FFFFFF'>Blog</a>
+            </p>
+        </div>
+    </body>
+</html>

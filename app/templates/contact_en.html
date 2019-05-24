@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='styles/styles.css') }}">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <title>La Bouquiniste Américaine?</title>
+    </head>
+    <body>
+        <div class = "langselect">
+            <a href = '/en' style = 'color: #64222d'>en</a>
+                    
+            <a href = '/fr' style = 'color: #64222d'>fr</a>
+        </div>
+        <div class="header">
+                La Bouquiniste Américaine
+        </div>
+        <ul>
+            <li> <a class='active' href ='/'>Home</a></li>
+            <li> <a href ='/en/about'>About</a></li>
+            <li> <a href ='/en/by_book'>Recommendations by book</a></li>
+            <li> <a href ='/en/by_topic'>Recommendations by topic</a></li>
+            <li> <a href ='/en/contact'>Contact</a></li>
+        </ul>
+        <div class="content">
+            <p>
+                Thank you so much for checking this out! I hope the experience was pleasant.
+                <br><br>
+                If you have any questions, comments, or suggestions, please don't hesitate to reach out. You can find me at any of the links below.
+                <br><br>
+                <div class="card">
+                    <img src="https://1.gravatar.com/avatar/45b082b9aef53a7f8bf4a9510e23b285?s=200&d=mm&r=G" alt="Maren" height=200px width=200px>
+                    <h1>Maren Hamilton</h1>
+                    <p class="title">Data Scienist</p>
+                    <p>McGill University</p>
+                    <div style="margin: 24px 0;">
+                        <a href="https://linkedin.com/in/maren-hamilton" style="color:black"><i class="fa fa-linkedin"></i></a>  
+                        <a href="https://github.com/marenhamilton" style="color:black"><i class="fa fa-github"></i></a> 
+                        <a href="https://marenhamilton.com" style="color:black"><i class="fa fa-code"></i></a> 
+                        <a href="mailto:marenhamilton@outlook.com" style="color:black"><i class="fa fa-envelope"></i></a> 
+                    </div>
+                    <p><button></button></p>
+                </div>
+            </p>
+        </div>
+        <div class="footer">
+            <p>
+                <a href='/' style = 'color: #FFFFFF'>Homepage </a> |
+                <a href='/en/about' style = 'color: #FFFFFF'>About</a> |
+                <a href='/en/contact' style = 'color: #FFFFFF'>Contact</a> |
+                <a href='https://marenhamilton.com' style = 'color: #FFFFFF'>Blog</a>
+            </p>
+        </div>
+    </body>
+</html>

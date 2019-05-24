@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <div class = "langselect">
+        <a href = '/en' style = 'color: #64222d'>en</a>
+             
+        <a href = '/fr' style = 'color: #64222d'>fr</a>
+    </div>
+    <head>
+        <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='styles/styles.css') }}">
+        <title>La Bouquiniste Américaine</title>
+    </head>
+
+    <body>
+        <div class="header" font = 'URW Chancery L, cursive'>
+            La Bouquiniste Américaine
+        </div>
+        <ul>
+            <li> <a class='active' href ='/'>Home</a></li>
+            <li> <a href ='/en/about'>About</a></li>
+            <li> <a href ='/en/by_book'>Recommendations by book</a></li>
+            <li> <a href ='/en/by_topic'>Recommendations by topic</a></li>
+            <li> <a href ='/en/contact'>Contact</a></li>
+        </ul>
+        <div class="content">
+            <h3>Looking for a new book to read?</h3>
+            <p>
+               Look no further! Click one of the links above to get a recommendation or read more about this app.
+            </p>
+            <img src='https://upload.wikimedia.org/wikipedia/commons/c/c2/Paris_75005_Quai_de_Montebello_Bouquinistes_20071014.jpg' class='center' width = 600 height = 400 >
+        </div>
+        <div class="footer">
+            <p>
+                <a href='/' style = 'color: #FFFFFF'>Homepage </a> |
+                <a href='/en/about' style = 'color: #FFFFFF'>About</a> |
+                <a href='/en/contact' style = 'color: #FFFFFF'>Contact</a> |
+                <a href='https://marenhamilton.com' style = 'color: #FFFFFF'>Blog</a>
+            </p>
+        </div>
+    </body>
+</html>

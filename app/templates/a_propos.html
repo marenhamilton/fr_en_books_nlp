@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href = "{{ url_for('static',filename='styles/styles.css') }}">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <title>La Bouquiniste Américaine</title>
+    </head>
+    <body>
+        <div class = "langselect">
+            <a href = '/en' style = 'color: #64222d'>en</a>
+                    
+            <a href = '/fr' style = 'color: #64222d'>fr</a>
+        </div>
+        <div class="header">
+            La Bouquiniste Américaine
+        </div>
+        <ul>
+            <li> <a class='active' href ='/fr'>Accueil</a></li>
+            <li> <a href ='/fr/a_propos'>A propos</a></li>
+            <li> <a href ='/fr/par_livre'>Recommendations par livre</a></li>
+            <li> <a href ='/fr/par_topique'>Recommendations par topique</a></li>
+            <li> <a href ='/fr/contact'>Contact</a></li>
+        </ul>
+        <div class="content">
+            <h1>A propos de La Bouquiniste Américaine</h1>
+
+            <p> 
+                Si vous cherchez comment j'ai fait cet app et ses modèles, vous pouvez en lire plus sur mon blog (qui est en anglais - je vous prie d'excuser ça)
+                <a href='https://www.marenhamilton.com'> ici</a>.
+            </p>
+            <h3>Qu'est-ce que "La bouquiniste américaine"?</h3>
+            <p>
+                La Bouquiniste Américaine est un système de recommendation de livres que j'ai créé pour ceux qui aiment lire et qui savent ce qui leur plaît.
+                Tous les livres que vous verrez sur ce site, soit en anglais ou français, devraient être disponibles gratuitement sur <a href = 'https://www.gutenberg.org/'> Project Gutenberg</a>
+                pour les textes anglais ou <a href = 'http://www.bibebook.com/'> Bibebook</a> pour les textes français.
+            </p>
+            <h3> Raison d'Etre</h3>
+            <p>
+                J'ai créé cet app parce que j'adore les langues, et j'espère que des gens utliseront cet util pout améliorer leur
+                capacité de parler une langue étrangère. Si du monde l'utilise pour trouver des livres dans leur langue native aussi, bon,
+                c'est qu'un autre bonus. J'aimerais bien ajouter d'autres langues pour tout le monde, donc si vous connaissez des autres sites de livres gratuits dans des autres langues, dites-le-moi! Vous trouverez une variété de manières par lesquelles vous
+                pouvez me contacter sur mon page <a href = '/en/contact'>contact</a>. Vous pouvez également me contacter si vous trouvez un erreur.
+            </p>
+            <h3>Remerciments</h3>
+            <p> 
+                Je voudrais remercier Project Gutenberg et Bibebook pour avoir fait disponibles les livres que j'ai utilisés,
+                espécialment Project Gutenberg qui a posté un base de données de leurs livres aussi. J'aimerais égalment remercier
+                <a href = 'https://www.kaggle.com/cedriclacrambe'> Cédric Lacrambe </a> pour avoir compilé le base de données que j'ai
+                utilisé pour les livres de Bibebook.
+                <br /><br />
+                Mais surtout, je veux dire le plus grand merci possible à mes profs de français
+                Most of all, of course, I would like to thank my French teachers: Mme Nevers, Mme Schiele, Mme Richards,
+                et "Papa" (dont le vrai nom m'échappe, désolée Papa). Ils ont nourri ma passion pour des langues; sans eux, 
+                je n'aurais jamais su à quel point je les aime.
+                <br><br>
+            </p>
+        </div>
+        <div class="footer">
+            <p>
+                <a href='/fr' style = 'color: #FFFFFF'>Accueil </a> |
+                <a href='/fr/a_propos' style = 'color: #FFFFFF'>A propos</a> |
+                <a href='/fr/contact' style = 'color: #FFFFFF'>Contact</a> |
+                <a href='https://marenhamilton.com' style = 'color: #FFFFFF'>Blog</a>
+            </p>
+        </div>
+    </body>
+</html>

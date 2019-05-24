@@ -1,0 +1,147 @@
+h1 {
+    font-family: sans-serif, 'Gill Sans, sans-serif';
+    font-size: 22pt;
+}
+body {
+    font-family: sans-serif, 'Gill Sans, sans-serif';
+    font-size: 11pt;
+    }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#5D5D5D;
+    color: white;
+    text-align: center;
+    font-size: 10pt;                
+}
+.langselect{
+    font-family: sans-serif, 'Gill Sans, sans-serif';
+    padding-right: 10px;
+    text-align: right;
+    background: #E1D1BB;
+    color: white;
+    font-size: 16px;
+    padding-bottom:0px;
+}
+.header {
+    font-family: cursive, 'URW Chancery L, cursive';
+    padding-left: 10px;
+    text-align: left;
+    background: #E1D1BB;
+    color: #64222D;
+    font-size: 50px;
+    padding-bottom:0px;
+}
+.content{
+    padding-bottom:30px;
+}
+
+.btn {
+    background-color: #E1D1BB;
+    border: none;
+    color: #64222D;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    opacity: 1
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #E1D1BB;
+}
+  
+li {
+    float: left;
+    font-size: 16px;
+}
+  
+li a {
+    display: block;
+    color: #64222D;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #ccbda9;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+#myInput {
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+  
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
